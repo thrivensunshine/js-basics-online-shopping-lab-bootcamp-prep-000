@@ -86,7 +86,7 @@ for(let i = 0; i < cart.length; i++){
   return cart;
 
   }
- }return `That item is not in your cart`
+ }return `That item is not in your cart.`
 }
 
 

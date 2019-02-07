@@ -92,8 +92,8 @@ for(let i = 0; i < cart.length; i++){
 
 // --------------FUNCTION 5- PLACE ORDER-----------------
  function placeOrder(ccNum){
-        if(ccNum === undefined){
-          return `Sorry, we don't have a credit card on file for you.`
-        }
+    if(ccNum === undefined){
+      return `Sorry, we don't have a credit card on file for you.`
+    }
 
-      }
+  }

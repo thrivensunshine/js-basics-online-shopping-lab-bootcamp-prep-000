@@ -11,6 +11,7 @@ function setCart(c) {
 
 //--------------FUNCTION 1- ADD TO CART -------------------------
 
+
 function addToCart(item){
 //let fin  = `${item} has been added to your cart.`
 //console.log(cart)
@@ -26,7 +27,9 @@ cart.push(itemObj)
 return `${item} has been added to your cart.`
 }
 
+
 // --------------FUNCTION 2- VIEW CART -------------------------
+
 
 function viewCart(){
  // console.log(cart.length)
@@ -70,6 +73,7 @@ function total(){
 
   }return priceArr.reduce((acc, curr) => acc + curr)
 }
+
 
 // --------------FUNCTION 3- REMOVE FROM CART-----------------
 

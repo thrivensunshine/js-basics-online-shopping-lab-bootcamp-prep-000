@@ -71,6 +71,8 @@ function total(){
   }return priceArr.reduce((acc, curr) => acc + curr)
 }
 
+// --------------FUNCTION 3- REMOVE FROM CART-----------------
+
 function removeFromCart(item) {
   // write your code here
 }

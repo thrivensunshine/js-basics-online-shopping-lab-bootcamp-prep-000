@@ -100,3 +100,4 @@ for(let i = 0; i < cart.length; i++){
   return fin
 }
 
+// Holy cow that felt great to do those!! progress!!!! i only got jammed up on one and that was syntax errors! huzzah!!

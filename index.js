@@ -46,7 +46,7 @@ function viewCart(){
       //console.log(dTres)
 
     if(cart.length === 1){
-      return `In your cart, you have ${vals[0]} at ${vals[1]}.`;
+      return `In your cart, you have ${vals[0]} at $${vals[1]}.`;
     }
     if(cart.length > 1){
     partSen.push(` ${vals[0]} at $${vals[1]}`);  

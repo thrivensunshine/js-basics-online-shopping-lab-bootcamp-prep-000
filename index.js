@@ -61,8 +61,14 @@ function viewCart(){
 
 // --------------FUNCTION 3- TOTAL -------------------------
 
-function total() {
-  // write your code here
+function total(){
+  let priceArr =[];
+  for(let i = 0; i < cart.length; i++){
+    let values = Object.values(cart[i]);
+    priceArr.push(values[1]);
+     //console.log(priceArr)
+
+  }return priceArr.reduce((accumulator, currentValue) => accumulator + currentValue)
 }
 
 function removeFromCart(item) {

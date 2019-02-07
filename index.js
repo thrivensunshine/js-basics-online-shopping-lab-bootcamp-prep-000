@@ -68,7 +68,7 @@ function total(){
     priceArr.push(values[1]);
      //console.log(priceArr)
 
-  }return priceArr.reduce((accumulator, currentValue) => accumulator + currentValue)
+  }return priceArr.reduce((acc, curr) => acc + curr)
 }
 
 function removeFromCart(item) {

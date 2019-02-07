@@ -75,7 +75,7 @@ function total(){
 }
 
 
-// --------------FUNCTION 3- REMOVE FROM CART-----------------
+// --------------FUNCTION 4- REMOVE FROM CART-----------------
 
 function removeFromCart(deleteMe){
 
@@ -90,7 +90,10 @@ for(let i = 0; i < cart.length; i++){
 }
 
 
+// --------------FUNCTION 5- PLACE ORDER-----------------
+ function placeOrder(ccNum){
+        if(ccNum === undefined){
+          return `Sorry, we don't have a credit card on file for you.`
+        }
 
-function placeOrder(cardNumber) {
-  // write your code here
-}
+      }

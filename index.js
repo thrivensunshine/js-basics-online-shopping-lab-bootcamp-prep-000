@@ -28,8 +28,11 @@ return `${item} has been added to your cart.`
 
 // --------------FUNCTION 2- VIEW CART -------------------------
 function viewCart(){
-  
+ // console.log(cart.length)
+  let dTres = [];
+
   let partSen = [];
+  let finSen;
 
   if(cart.length === 0){
     return "Your shopping cart is empty.";
@@ -38,12 +41,21 @@ function viewCart(){
   for(let i = 0; i < cart.length; i++){
     //console.log( Object.values(cart))
       let vals = Object.values(cart[i]);
+     
+      dTres.push(vals[0],vals[1]);
+      //console.log(dTres)
 
-    partSen.push(` ${vals[0]} at $${vals[1]}`);
-    partSen.join(',');
-    //console.log(partSen )
+    if(cart.length === 1){
+      return `In your cart, you have ${vals[0]} at ${vals[1]}.`;
+    }
+    if(cart.length > 1){
+    partSen.push(` ${vals[0]} at $${vals[1]}`);  
+    }
+  }
 
-  }return `In your cart, you have${partSen}.`;
+    partSen.splice(partSen.length- 1, 0, "and");
+    finSen = partSen.join(',');
+    return `In your cart, you have${finSen.replace(/and,/g,' and')}.` ; 
 }
 
 

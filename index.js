@@ -27,6 +27,7 @@ return `${item} has been added to your cart.`
 }
 
 // --------------FUNCTION 2- VIEW CART -------------------------
+
 function viewCart(){
  // console.log(cart.length)
   let dTres = [];
@@ -58,6 +59,7 @@ function viewCart(){
     return `In your cart, you have${finSen.replace(/and,/g,' and')}.` ; 
 }
 
+// --------------FUNCTION 3- TOTAL -------------------------
 
 function total() {
   // write your code here
